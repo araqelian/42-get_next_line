@@ -66,7 +66,7 @@ char	*get_next_line(int fd)
 {
 	char		*tmp;
 	char		*buffer;
-	static char	*str[OPEN_MAX];
+	static char	*str[FOPEN_MAX];
 
 	if (fd < 0 || BUFFER_SIZE < 1)
 		return (NULL);
